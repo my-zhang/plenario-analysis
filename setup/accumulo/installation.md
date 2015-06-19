@@ -1,34 +1,31 @@
-1. Prerequisite
-===============
+Accumulo Installation
+=====================
 
-1.1 HDFS
---------
+1. Prerequisite
+---------------
+
+### 1.1 HDFS
 
 [HDFS Doc]
 
-1.2 Zookeeper 
--------------
+### 1.2 Zookeeper 
 
-1.3 Accumulo
-------------
+### 1.3 Accumulo
 
 [Accumulo Doc]
 
 2. Setup
-========
+--------
 
 $ rm /tmp/* -rf 
 
-2.1 Start Various Systems
--------------------------
-
-### 2.1.1 Start HDFS
+### 2.1 Start HDFS
 
 $ bin/hdfs dfs -mkdir /accumulo
 
-### 2.1.2 Start ZK
+### 2.2 Start ZK
  
-### 2.1.3 Start Accumulo
+### 2.3 Start Accumulo
 
 bin/accumulo init 
 instance: plenario 
