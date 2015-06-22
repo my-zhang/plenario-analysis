@@ -24,6 +24,10 @@ $ rm /tmp/* -rf
 $ bin/hdfs dfs -mkdir /accumulo
 
 ### 2.2 Start ZK
+
+```
+$ bin/zkServer.sh start
+```
  
 ### 2.3 Start Accumulo
 
@@ -36,13 +40,17 @@ conf
 master 0.0.0.0
 monitor 0.0.0.0
 
-pyaccumulo mv subdir to dist-packages
-
+```
 $ bin/start-all.sh 
+```
 
 To enable client connection, such as python API. 
 
+```
 $ bin/accumulo proxy -p proxy/proxy.properties
+```
+
+Sample client code. 
 
 ```python
 from pyaccumulo import Accumulo, Mutation, Range 
