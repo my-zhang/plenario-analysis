@@ -66,3 +66,19 @@ conn = Accumulo(host="my.proxy.hostname", port=50096, user="root", password="sec
 
 [HDFS Doc]:http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
 [Accumulo Doc]:https://github.com/apache/accumulo/blob/master/INSTALL.md
+
+### Stop everything
+
+First stop accumulo
+
+$ bin/stop-all.sh
+
+Next the zookeeper:
+
+$ bin/zkServer.sh stop
+
+Finally, HDFS:
+
+$ sbin/stop-dfs.sh
+
+
