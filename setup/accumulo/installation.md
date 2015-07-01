@@ -19,6 +19,8 @@ Accumulo Installation
 
 ### 2.0 Remove HDFS meta- and actual data (by default in /tmp)
 
+Only do this before running HDFS the first time.
+Don't do it later because you loose meta- and actual HDFS data.
 $ rm /tmp/* -rf 
 
 ### 2.1 Start HDFS and create HDFS folder for accumulo
