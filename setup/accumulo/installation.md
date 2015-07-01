@@ -17,6 +17,8 @@ Accumulo Installation
 2. Setup
 --------
 
+### 2.0 Remove HDFS meta- and actual data (by default in /tmp)
+
 $ rm /tmp/* -rf 
 
 ### 2.1 Start HDFS and create HDFS folder for accumulo
