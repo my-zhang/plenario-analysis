@@ -21,6 +21,7 @@ Accumulo Installation
 
 Only do this before running HDFS the first time.
 Don't do it later because you loose meta- and actual HDFS data.
+
 $ rm /tmp/* -rf 
 
 ### 2.1 Start HDFS and create HDFS folder for accumulo
