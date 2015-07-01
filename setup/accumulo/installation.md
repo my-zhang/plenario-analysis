@@ -21,8 +21,8 @@ $ rm /tmp/* -rf
 
 ### 2.1 Start HDFS and create HDFS folder for accumulo
 
-sbin/start-dfs.sh
-bin/hdfs dfs -mkdir /accumulo
+$ sbin/start-dfs.sh
+$ bin/hdfs dfs -mkdir /accumulo
 
 ### 2.2 Start ZK
 
