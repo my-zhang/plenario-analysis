@@ -37,10 +37,8 @@ def reproduce_data(input_sample, version_name, rows):
     data_list = []
     
     # This loop pertubates the coordinates and changes the date randomly
-    if rows > len(snap_data):
-        multiple = (rows / snap_data)
-        residal = rows % snap_data
-
+    multiple = (rows / snap_data)
+    residal = rows % snap_data
     for i in range(min(len(snap_data),rows)):
         if i%10000==0:
             print i
