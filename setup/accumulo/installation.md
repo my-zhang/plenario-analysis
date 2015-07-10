@@ -17,9 +17,22 @@ Accumulo Installation
 2. Setup
 --------
 
+<<<<<<< HEAD
 $ rm /tmp/* -rf 
 
 ### 2.1 Start HDFS
+=======
+### 2.0 Remove HDFS meta- and actual data (by default in /tmp)
+
+Only do this before running HDFS the first time.
+Don't do it later because you loose meta- and actual HDFS data.
+
+$ rm /tmp/* -rf 
+
+### 2.1 Start HDFS and create HDFS folder for accumulo
+
+$ sbin/start-dfs.sh
+>>>>>>> a37769059c048a4d8d3abfb5948ce64247e05e92
 
 $ bin/hdfs dfs -mkdir /accumulo
 
@@ -59,3 +72,22 @@ conn = Accumulo(host="my.proxy.hostname", port=50096, user="root", password="sec
 
 [HDFS Doc]:http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/SingleCluster.html
 [Accumulo Doc]:https://github.com/apache/accumulo/blob/master/INSTALL.md
+<<<<<<< HEAD
+=======
+
+### Stop everything
+
+First stop accumulo
+
+$ bin/stop-all.sh
+
+Next the zookeeper:
+
+$ bin/zkServer.sh stop
+
+Finally, HDFS:
+
+$ sbin/stop-dfs.sh
+
+
+>>>>>>> a37769059c048a4d8d3abfb5948ce64247e05e92
