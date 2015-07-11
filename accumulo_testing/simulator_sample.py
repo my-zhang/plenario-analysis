@@ -11,6 +11,9 @@ now_leq_date = "01/01/2013"
 now_geq_date = "12/15/2014"
 
 
+
+# PostGres testing
+
 # Number of sessions
 for k in range(5):
 
@@ -30,4 +33,6 @@ for k in range(5):
 # This is blocked out because we are only testing expand and narrow geog, instead of the full package
 # transition_prob = construct_transmat()
 # plenario_simulator("user_login",500,dataset_name,date_freq)
+
+
 

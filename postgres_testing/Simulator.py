@@ -28,6 +28,17 @@ import datetime
 import matplotlib as plt
 import geohash
 
+def input_global_variables(latlong_1, latlong_2, latlong_3, latlong_4, latlong_5):
+    global now_latlong_1
+    now_latlong_1 = latlong_1
+    global now_latlong_2
+    now_latlong_2 = latlong_2
+    global now_latlong_3
+    now_latlong_3 = latlong_3
+    global now_latlong_4
+    now_latlong_4 = latlong_4
+    global now_latlong_5
+    now_latlong_5 = latlong_5
 
 
 # 1. Identify states & Transition between states
@@ -87,7 +98,6 @@ def alter_transmat(transition_prob,curr_state,next_state,p):
     
 
 
-# In[3]:
 
 # 3. Assume query functions are built
 
@@ -96,7 +106,6 @@ def plenario2add_data(dataset_name,date_freq):
     
 
 
-# In[4]:
 
 # Simulator for mapping and sending queries
 
