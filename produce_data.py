@@ -67,4 +67,4 @@ def reproduce_data(input_sample, version_name, rows):
         if (i%10000 ==0):
             print i
         
-    return result_data
+    return result_data.to_csv("results.csv")
