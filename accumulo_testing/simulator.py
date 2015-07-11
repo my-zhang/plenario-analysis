@@ -26,11 +26,11 @@ def input_global_variables(latlong_1, latlong_2, latlong_3, latlong_4, latlong_5
 
 query_states = ["add_data","user_login","query_data","expand_time","narrow_time","expand_geog","narrow_geog"]
 
-now_latlong_1 = "37.795542, -122.423058"
-now_latlong_2 = "37.800019, -122.398853"
-now_latlong_3 = "37.789302, -122.38821"
-now_latlong_4 = "37.78121, -122.39212"
-now_latlong_5 = "37.770036, -122.417736"
+# now_latlong_1 = "37.795542, -122.423058"
+# now_latlong_2 = "37.800019, -122.398853"
+# now_latlong_3 = "37.789302, -122.38821"
+# now_latlong_4 = "37.78121, -122.39212"
+# now_latlong_5 = "37.770036, -122.417736"
 
 # 2. Construct Default Markov Chain Transition Matrix
 
@@ -322,6 +322,8 @@ def plenario2narrow_geog(dataset_name,date_freq):
     long_list.append(float(now_latlong_4.split(",")[1]))
     lat_list.append(float(now_latlong_5.split(",")[0]))
     long_list.append(float(now_latlong_5.split(",")[1]))
+
+    print lat_list, long_list    
 
     #     Draw boundary for Box
     lat_min = min(lat_list)
